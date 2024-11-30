@@ -60,7 +60,7 @@ Buka file .env dan atur konfigurasi database sesuai dengan ini:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=todo-apps
+DB_DATABASE=sekolah_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -70,7 +70,7 @@ DB_PASSWORD=
 Jalankan migrasi database untuk menyiapkan struktur tabel:
 
 ```bash
-php artisan migrate
+php artisan migrate:fresh
 ```
 
 Jalankan Seeder untuk mengisi data awal
@@ -97,23 +97,12 @@ Jika Anda mengalami masalah, pastikan untuk memeriksa:
 4. Versi PHP dan MySQL yang digunakan sesuai dengan yang dibutuhkan oleh proyek.
 
 
+### Akun untuk login
 
-## Dokumentasi API
+email : test@example.com
+password : 12345678
 
-1. Post Data
 
-```bash
-http://localhost:8000/api/tasks
-```
 
-![Screenshot 2024-08-20 091956](https://github.com/user-attachments/assets/e32a78df-e7d6-4014-983b-883e714a028a)
-
-2. Get Categories
-
-```bash
-http://localhost:8000/api/tasks
-```
-
-![Screenshot 2024-08-20 092042](https://github.com/user-attachments/assets/2d4e3ccf-c7cc-4d94-b365-51365f89fb54)
 
 
